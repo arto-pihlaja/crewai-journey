@@ -68,7 +68,7 @@ activity_search_task = Task(
       url: https://www.tripadvisor.com/Attraction_Review-g187234-d247503-Reviews-Castle_Hill_of_Nice-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html
     - name: Old Town
       description: This historic part of Nice feels like a medieval village with narrow streets curving between old buildings
-      url: https://www.tripadvisor.com/Attraction_Review-g187234-d254286-Reviews-Old_Town-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html
+      url: https://frenchriviera.travel/old-town-nice/
   """,
   max_inter=3,
   tools=[search_tool],
