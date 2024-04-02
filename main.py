@@ -5,7 +5,6 @@ from datetime import datetime
 #from langchain_community.utilities import GoogleSerperAPIWrapper
 from langchain_community.tools import DuckDuckGoSearchRun
 #from langchain.utilities import GoogleSerperAPIWrapper
-#from langchain.agents import Tool
 
 
 # Topic that will be used in the crew run
@@ -21,14 +20,6 @@ search_tool = DuckDuckGoSearchRun()
 #search_tool = SerperDevTool()
 #search_tool = GoogleSerperAPIWrapper()
 #search = GoogleSerperAPIWrapper()
-
-# Create and assign the search tool to an agent
-#search_tool = Tool(
-#  name="Intermediate Answer",
-#  func=search.run,
-#  description="Useful for search-based queries",
-#)
-
 
 # Creating first agent
 activity_goal = f'Find family activities for a holiday in {destination}.'
@@ -77,7 +68,7 @@ activity_search_task = Task(
       url: https://www.tripadvisor.com/Attraction_Review-g187234-d247503-Reviews-Castle_Hill_of_Nice-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html
     - name: Old Town
       description: This historic part of Nice feels like a medieval village with narrow streets curving between old buildings
-      url: https://www.tripadvisor.com/Attraction_Review-g187234-d254286-Reviews-Old_Town-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html
+      url: https://frenchriviera.travel/old-town-nice/
   """,
   max_inter=3,
   tools=[search_tool],
