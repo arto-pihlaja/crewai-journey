@@ -5,7 +5,6 @@ from datetime import datetime
 #from langchain_community.utilities import GoogleSerperAPIWrapper
 from langchain_community.tools import DuckDuckGoSearchRun
 #from langchain.utilities import GoogleSerperAPIWrapper
-#from langchain.agents import Tool
 
 
 # Topic that will be used in the crew run
@@ -21,14 +20,6 @@ search_tool = DuckDuckGoSearchRun()
 #search_tool = SerperDevTool()
 #search_tool = GoogleSerperAPIWrapper()
 #search = GoogleSerperAPIWrapper()
-
-# Create and assign the search tool to an agent
-#search_tool = Tool(
-#  name="Intermediate Answer",
-#  func=search.run,
-#  description="Useful for search-based queries",
-#)
-
 
 # Creating first agent
 activity_goal = f'Find family activities for a holiday in {destination}.'
